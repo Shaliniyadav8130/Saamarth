@@ -1,3 +1,5 @@
+import 'package:bus_track/HomeScreens/HomeScreen.dart';
+import 'package:bus_track/HomeScreens/SearchBar.dart';
 import 'package:flutter/material.dart';
 
 class CommonSidebar extends StatelessWidget {
@@ -23,15 +25,24 @@ class CommonSidebar extends StatelessWidget {
             leading: Icon(Icons.home),
             title: Text('Home'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ),
+              );
             },
           ),
           ListTile(
             leading: Icon(Icons.roundabout_left_outlined),
             title: Text('Routes'),
             onTap: () {
-              Navigator.pop(context);
-            },
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SearchAutocompleteScreen(),
+                ),
+              );},
           ),
         ],
       ),

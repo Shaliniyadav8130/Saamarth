@@ -53,7 +53,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   children: [
                     SizedBox(height:6.0),
                     Text("Hi there",style: TextStyle(fontSize: 12),),
-                    Text("SEARCH YOUR BUS HERE",style: TextStyle(fontSize: 20),),
+                    Text("YOUR BUS LOCATION",style: TextStyle(fontSize: 20),),
 
                     SizedBox(height:20.0),
 
@@ -64,7 +64,15 @@ class _SearchScreenState extends State<SearchScreen> {
                     Text("Dharampur",style: TextStyle(fontSize: 17),)
                   ],
                 ),
-                    SizedBox(height:25.0),
+                    SizedBox(height:5),
+                    Row(
+                      children: [
+                        //SizedBox(width: 12,),
+                        Icon(Icons.arrow_downward),
+
+                      ],
+                    ),
+                    SizedBox(height:5),
                     Row(
                       children: [
                         Icon(Icons.location_on,color: Color(0xff000000),),
